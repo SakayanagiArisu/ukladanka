@@ -507,12 +507,36 @@ var puzzle = {
         let obrazki = document.cookie.split(';');
         for(let i = 0; i < 7; i++){
             let tab1 = obrazki[i].split('=');
+            let index = null;
+            switch(tab1[0]){
+                case 'momo':
+                    index = 0;
+                    break;
+                case 'ayanokoji':
+                    index = 1;
+                    break;
+                case 'chika':
+                    index = 2;
+                    break;
+                case 'kurusu':
+                    index = 3;
+                    break;
+                case 'koneko':
+                    index = 4;
+                    break;
+                case 'sakayanagi':
+                    index = 5;
+                    break;
+                case 'yoshino':
+                    index = 6;
+                    break;
+            }
             let tryby = tab1[1].split('|');
             for(let k = 0; k < 4; k++){
                 let rekordy = tryby[k].split(',');
                 for(let l = 0; l < 10; l++){
                     let pom = rekordy[l].split('/');
-                    this['waifus'][i]['records'][k].push([decodeURIComponent(pom[0]), pom[1]])
+                    this['waifus'][index]['records'][k].push([decodeURIComponent(pom[0]), pom[1]])
                 }
             }
         }
