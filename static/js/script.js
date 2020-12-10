@@ -508,7 +508,7 @@ var puzzle = {
         for(let i = 0; i < 7; i++){
             let tab1 = obrazki[i].split('=');
             let index = null;
-            switch(tab1[0]){
+            switch(tab1[0].replace( /\s/g, '')){
                 case 'momo':
                     index = 0;
                     break;
@@ -518,7 +518,7 @@ var puzzle = {
                 case 'chika':
                     index = 2;
                     break;
-                case 'kurusu':
+                case 'kirisu':
                     index = 3;
                     break;
                 case 'koneko':
