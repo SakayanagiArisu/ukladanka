@@ -311,16 +311,16 @@ var puzzle = {
                     let imgName;
                     switch(x){
                         case 3:
-                            imgName = 'cyferki/colon.gif';
+                            imgName = 'gfx/cyferki/colon.gif';
                             break;
                         case 6:
-                            imgName = 'cyferki/colon.gif';
+                            imgName = 'gfx/cyferki/colon.gif';
                             break;
                         case 9:
-                            imgName = 'cyferki/dot.gif';
+                            imgName = 'gfx/cyferki/dot.gif';
                             break;
                         default:
-                            imgName = 'cyferki/c0.gif';
+                            imgName = 'gfx/cyferki/c0.gif';
                             break;
                     }
                     let img = document.createElement('img');
