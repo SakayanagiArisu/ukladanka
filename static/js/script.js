@@ -135,6 +135,7 @@ var puzzle = {
                                 let info = `
                                     Gratulacje!
                                     Twój czas to ${formatedTime}
+                                    Podaj swój nick:
                                 `;
                                 div.innerText = info;
                                 let but = document.createElement('button');
